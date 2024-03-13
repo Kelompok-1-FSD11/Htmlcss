@@ -1,21 +1,7 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-
-.wrapper{
-    display: flex;
-    justify-content: space-evenly;
+.kategori{
     background-color: aqua;
-}
-.wrapper .wrapper-top{
-    background: azure;
-}
-
-.wrapper-top{
-    width: 1440px;
-    background-color: rgb(28, 31, 31);
-}
-.wrapper-top .judul{
-    
+    display: block;
+    height: 225px;
+    width: auto;
+    align-content: center;
 }
