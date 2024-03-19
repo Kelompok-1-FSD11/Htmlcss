@@ -1,0 +1,133 @@
+.flex-utama{
+    display: flex;
+    background-color: aqua;
+    flex-wrap: wrap;
+    height: 100vh;
+    border: 2px solid black;
+    margin: 15px 15%;
+    box-sizing: border-box;
+}
+.container1{
+    flex: 1 100%;
+    background-color: rgb(238, 188, 188);
+    /* width: 500px; */
+    height: max-content;
+    /* height: 280px; */
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+.header-content{
+    display: flex;
+    border: 1px solid black;
+    flex-direction: row;
+    margin: 3px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+.img-wrapper{
+    flex: 1;
+    background-color: aliceblue;
+}
+.img-wrapper img{
+    width: 64px;
+    height: 64px;
+}
+.text-wrapper{
+    flex: 6;
+    background-color: aqua;
+    /* align-items: flex-end; */
+}
+.text-wrapper p{
+    text-align: left;
+    
+}
+.bungkus2{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conten{
+    border: 1px solid #333;
+    margin: 5px;
+    border-radius: 8px;
+    padding-top: 2px;
+    box-sizing: border-box;
+} 
+.conten img{
+    align-content: center;
+}
+.terpilih{
+    border: 2px solid blue;
+}
+.posisi-img img{
+    width: 32px;
+    height: 32px;
+}
+.posisi-judul{
+    text-align: center;
+    text-shadow: blue;
+    font-size: 21px;
+}
+.bungkus3{
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+.unt-gmbr{
+    display: block;
+    max-width: 100%; /* Maksimalkan lebar gambar */
+    height: auto; /* Biarkan ketinggian gambar disesuaikan secara proporsional */
+}
+.unt-gmbr img{
+    top: -30%;
+    border: #333;
+    background-color: aliceblue;
+    width: 64px;
+    height: 64px;
+}
+.isi-top-up{
+    border: 1px solid white;
+    margin: 5px;
+    box-sizing: border-box;
+}
+.box{
+    margin-top: 15px;
+    width: 136px;
+    height: 108px;
+    text-align: center;
+    border: 1px solid saddlebrown;
+    /* background-color: rgb(53, 26, 207); */
+    box-sizing: border-box;
+}
+.box p{
+    font-size: 15px;
+}
+
+
+
+
+
+
+/* bagian untuk menu berikutnya */
+.container2{
+    flex: 1 100%;
+    background-color: bisque;
+    width: 600px;
+    margin: 10px;
+}
+.container3{
+    flex: 1 100%;
+    width: 500px;
+    margin: 10px;
+    background-color: red;
+}
