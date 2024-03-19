@@ -39,8 +39,10 @@
     /* align-items: flex-end; */
 }
 .text-wrapper p{
-    text-align: left;
-    
+    text-align: left; /* Mengatur teks menjadi rata kiri */
+    font-size: 25px; /* Menetapkan ukuran font teks */
+    display: block; /* Meletakkan teks di bawah elemen */
+    margin-top: 10px; /* Memberikan jarak antara teks dan elemen di atasnya */    
 }
 .bungkus2{
     margin-top: 15px;
@@ -85,11 +87,12 @@
 }
 .unt-gmbr{
     display: block;
+    /* position: absolute; */
     max-width: 100%; /* Maksimalkan lebar gambar */
     height: auto; /* Biarkan ketinggian gambar disesuaikan secara proporsional */
 }
 .unt-gmbr img{
-    top: -30%;
+    /* top: -30%; */
     border: #333;
     background-color: aliceblue;
     width: 64px;
@@ -119,12 +122,81 @@
 
 
 /* bagian untuk menu berikutnya */
-.container2{
+.container2 {
+    flex: 1 100%;
+    /* background-color: bisque; */
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Mengatur posisi awal dari flex items */
+    align-items: center; /* Mengatur vertikal centering */
+}
+
+.img-wrapper-1 {
+    display: flex; /* Mengubah elemen img-wrapper-1 menjadi flex container */
+    align-items: center; /* Mengatur vertikal centering */
+}
+
+.img-wrapper-1 img {
+    width: 44px;
+    height: 44px;
+}
+
+/* CSS untuk flex items */
+.flex-item {
+    margin-right: 10px; /* Menambahkan jarak antara flex items */
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.wrapper-content{
+    display: flex; /* Mengubah elemen img-wrapper-1 menjadi flex container */
+    align-items: center; /* Mengatur vertikal centering */
+}
+
+.wadah{
+    display: flex;
+    align-items: center;
+
+}
+.isi{
+    background-color: black;
+    border: 2px solid white;
+    height: 120px;
+    width: 80px;
+}
+
+/*.container2{
     flex: 1 100%;
     background-color: bisque;
-    width: 600px;
-    margin: 10px;
 }
+.flex-container {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: flex-start;
+}
+.img-wrapper-1{
+    display: block;
+}
+.img-wrapper-1 img{
+    width: 44px;
+    height: 44px;
+}
+
+
+.flex-item {
+    background-color: #f0f0f0;
+
+    flex: 1; 
+}
+*/
+
+
+
+
+/* bagian berikutnya yg terakhir */
 .container3{
     flex: 1 100%;
     width: 500px;
