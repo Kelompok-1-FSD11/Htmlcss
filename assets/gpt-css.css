@@ -1,0 +1,62 @@
+/* Gaya untuk container utama */
+.flex {
+    display: flex;
+}
+
+/* Gaya untuk bagian kiri */
+.bungkus1 {
+    flex: 1; /* Bagian kiri akan menempati ruang yang tersedia */
+    padding: 20px; /* Jarak antara elemen di dalamnya */
+    border: 1px solid #ccc; /* Contoh gaya border */
+}
+
+/* Gaya untuk bagian tengah */
+.bungkus2 {
+    flex: 2; /* Bagian tengah akan memiliki lebar dua kali dari bagian kiri */
+    display: flex;
+    flex-wrap: wrap; /* Memungkinkan konten untuk melintas ke baris berikutnya jika tidak cukup ruang */
+    gap: 20px; /* Jarak antara konten */
+    padding: 20px; /* Jarak di sekitar konten */
+}
+
+/* Gaya untuk konten dalam bagian tengah */
+.conten {
+    flex-basis: calc(50% - 20px); /* Mengatur lebar konten agar dua konten bisa sejajar */
+    display: flex;
+    flex-direction: column; /* Menyusun elemen di dalam konten secara vertikal */
+    align-items: center; /* Menengahkan konten secara horizontal */
+}
+
+/* Gaya untuk gambar dalam konten */
+.posisi-img img {
+    width: 100%; /* Mengisi lebar dari parent-nya */
+    height: auto; /* Menjaga aspek rasio gambar */
+}
+
+/* Gaya untuk judul dalam konten */
+.posisi-judul {
+    margin-top: 10px; /* Jarak antara gambar dan judul */
+}
+
+/* Gaya untuk bagian kanan */
+.bungkus3 {
+    flex: 1; /* Bagian kanan akan menempati ruang yang tersedia */
+    padding: 20px; /* Jarak antara elemen di dalamnya */
+    border: 1px solid #ccc; /* Contoh gaya border */
+}
+
+/* Gaya untuk isi-top-up */
+.isi-top-up {
+    margin-bottom: 20px; /* Jarak antara konten */
+}
+
+/* Gaya untuk box */
+.box {
+    border: 1px solid #ccc; /* Contoh gaya border */
+}
+
+/* Gaya untuk gambar dalam box */
+.unt-gmbr img {
+    width: 100%; /* Mengisi lebar dari parent-nya */
+    height: auto; /* Menjaga aspek rasio gambar */
+}
