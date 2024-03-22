@@ -1,6 +1,6 @@
 .flex-utama{
     display: flex;
-    background-color: aqua;
+    /* background-color: aqua; */
     flex-wrap: wrap;
     height: auto;
     border: 2px solid black;
@@ -9,7 +9,7 @@
 }
 .container1{
     flex: 1 100%;
-    background-color: rgb(238, 188, 188);
+    /* background-color: rgb(238, 188, 188); */
     /* width: 500px; */
     height: max-content;
     /* height: 280px; */
@@ -28,7 +28,7 @@
 }
 .img-wrapper{
     flex: 1;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }
 .img-wrapper img{
     width: 64px;
@@ -36,7 +36,7 @@
 }
 .text-wrapper{
     flex: 6;
-    background-color: aqua;
+    /* background-color: aqua; */
     /* align-items: flex-end; */
 }
 .text-wrapper p{
@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: row;
     border: 1px solid black;
-    
+    margin-bottom: 15px;
 }
 .flex{
     display: flex;
@@ -80,7 +80,7 @@
     font-size: 21px;
 }
 .bungkus3{
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -95,7 +95,7 @@
 .unt-gmbr img{
     /* top: -30%; */
     border: #333;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     width: 64px;
     height: 64px;
 }
@@ -122,7 +122,7 @@
 /* bagian untuk menu berikutnya */
 .container2 {
     flex: 1 100%;
-    background-color: bisque;
+    /* background-color: bisque; */
     margin: 10px;
     box-sizing: border-box;
     border: 1px solid black;
@@ -172,14 +172,14 @@
 }
 .nama{
     height: 100px;
-    background-color: aqua;
+    /* background-color: aqua; */
     border: #007bff solid 1px;
     flex: 1;
 }
 .rating{
     flex: 1;
     height: 100px;
-    background-color: rgb(77, 53, 184);
+    /* background-color: rgb(77, 53, 184); */
     border: #007bff solid 1px;
 }
 .rating img{
@@ -194,103 +194,63 @@
     display: flex;
 }
 .isi{
-    background-color: black;
+    /* background-color: black; */
     border: 2px solid white;
     height: 120px;
     width: 80px;
 }
-
-/*.container2{
-    flex: 1 100%;
-    background-color: bisque;
-}
-.flex-container {
-    display: flex; 
-    flex-direction: row; 
-    justify-content: flex-start;
-}
-.img-wrapper-1{
-    display: block;
-}
-.img-wrapper-1 img{
-    width: 44px;
-    height: 44px;
-}
-
-
-.flex-item {
-    background-color: #f0f0f0;
-
-    flex: 1; 
-}
-*/
-
-
-
 
 /* bagian berikutnya yg terakhir */
 .container3{
     flex: 1 100%;
     width: 500px;
     margin: 10px;
-    background-color: red;
+    /* background-color: red; */
+}
+.bungkus-isi{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
-
-.card img {
-  width: 100%;
-  height: auto;
+.card-content{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 186px;
+    height: 248px;
 }
-
-.card-info {
-  padding: 20px;
+.no1{
+    flex: 2;
+    width: 186px;
+    height: 93px;
+    border: #333;
+    /* background-color: #007bff; */
 }
-
-.card-info h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
+.no1 img{
+    width: 186px;
+    height: 93px;
 }
-
-.card-info p {
-  font-size: 14px;
-  margin-bottom: 10px;
+.no2{
+    flex: 2;
+    /* background-color: #ca3838; */
+    height: 54px;
 }
-
-.stats {
-  margin-bottom: 10px;
+.no2 h2{
+    font-size: 15px;
 }
-
-.stats span {
-  margin-right: 10px;
+.no2 h3{
+    font-size: 12px;
+    /* background-color: #333; */
+    color: #ccc;
 }
-
-.cta {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.actions button {
-  background-color: #fff;
-  border: 1px solid #007bff;
-  color: #007bff;
-  padding: 8px 12px;
-  margin-right: 10px;
-  font-size: 14px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.actions button:hover {
-  background-color: #007bff;
-  color: #fff;
+.no3{
+    flex: 1;
+    /* background-color: aquamarine; */
+    
 }
