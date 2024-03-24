@@ -62,6 +62,14 @@ img {
     justify-content: space-between;
 }
 
+.full-display {
+    display: flex;
+}
+
+.smaller-display {
+    display: none;
+}
+
 .nav-button-category-cart {
     background-color: transparent;
     color: var(--darkgrey);
@@ -157,6 +165,10 @@ input {
     cursor: pointer;
 }
 
+.mobile-version-button {
+    display: none;
+}
+
 /* Stage 3 */
 
 .stage-3-nav-container {
@@ -186,3 +198,98 @@ input {
     line-height: 1.125rem;
 }
 
+@media screen and (max-width: 1440px) {
+    .nav-link-container {
+        margin: 0;
+    }
+
+    .nav-container {
+        padding: 0;
+    }
+
+    .stage-3-nav-container {
+        margin: 0;
+    }
+
+    .small-nav-logo {
+        width: 2.5rem;
+        height: 2.5rem;
+        object-fit: cover;
+    }
+
+    .smaller-display {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .full-display {
+        display: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-block {
+        display: none;
+    }
+
+    .stage-3-nav-container {
+        display: none;
+    }
+
+    .nav-logo-button-and-search {
+        width: 37.5rem;
+        padding: 0;
+        margin: auto;
+    }
+
+    .small-nav-logo {
+        width: 1.5rem;
+        height: 2rem;
+        object-fit: cover;
+    }
+
+    .smaller-display {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .nav-button-user-account, .nav-button-cart {
+        display: none;
+    }
+
+    .mobile-version-button {
+        display: flex;
+        min-width: 20%;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .button-container>button {
+        color: var(--darkgrey);
+        font-size: 1.125rem;
+        border: 0;
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-logo-button-and-search {
+        width: 100%;
+        padding: 0;
+        margin: 0o;
+    }
+}
