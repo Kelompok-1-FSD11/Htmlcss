@@ -25,9 +25,10 @@ button {
 header {
     text-align: right;
     position: fixed;
+    width: 100%;
 }
 
-img {
+.nav-logo>img {
     width: 130px;
     height: 40px;
 }
@@ -244,15 +245,14 @@ input {
     }
 
     .nav-logo-button-and-search {
-        width: 37.5rem;
-        padding: 0;
+        max-width: 37.5rem;
+        padding: 0.75rem 1rem;
         margin: auto;
     }
 
     .small-nav-logo {
         width: 1.5rem;
         height: 2rem;
-        object-fit: cover;
     }
 
     .smaller-display {
@@ -262,7 +262,7 @@ input {
         object-fit: cover;
     }
 
-    .nav-button-user-account, .nav-button-cart {
+    .nav-button-user-account, .nav-button-cart, .nav-button-category-cart {
         display: none;
     }
 
@@ -290,7 +290,6 @@ input {
 @media screen and (max-width: 600px) {
     .nav-logo-button-and-search {
         width: 100%;
-        padding: 0;
-        margin: 0o;
+        margin: 0;
     }
 }
