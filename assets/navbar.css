@@ -53,7 +53,7 @@ header {
 /* Stage 2 */
 
 .nav-container {
-    background-color: var(--lightgrey);
+    background-color: white;
     padding: 0 2.5rem;
 }
 
@@ -101,7 +101,7 @@ header {
     font-size: 0.875rem;
     font-family: 'Exo';
     width: auto;
-    height: 1.5rem;
+    height: 2.5rem;
     display: flex;
     flex-direction: row-reverse;
 }
@@ -160,7 +160,7 @@ input {
     cursor: pointer;
 }
 
-.button-login {
+div>.button-login {
     color: var(--white);
     background-color: var(--blue);
     border: 1px solid var(--blue);
@@ -175,6 +175,7 @@ input {
 
 .stage-3-nav-container {
     margin: 0 2.5rem;
+    background-color: white;
 }
 
 .inside-stage-3-container {
@@ -230,7 +231,7 @@ input {
         display: none;
     }
 
-    .hidden {
+    .hidden-text {
         display: none;
     }
 }
