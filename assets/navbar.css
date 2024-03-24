@@ -24,6 +24,7 @@ button {
 
 header {
     text-align: right;
+    position: fixed;
 }
 
 img {
