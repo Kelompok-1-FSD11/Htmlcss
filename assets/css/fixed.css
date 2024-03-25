@@ -3,7 +3,7 @@
     /* background-color: aqua; */
     flex-wrap: wrap;
     height: auto;
-    /* border: 2px solid black; */
+    border: 2px solid black;
     margin: 15px 15%;
     box-sizing: border-box;
 }
@@ -198,8 +198,10 @@
     border: 1px solid white;
     margin: 5px;
     flex: 1;
-    height: 128px;
+    height: 148px;
     box-sizing: border-box;
+    background-color: #afbbca;
+
 }
 
 .wadah{
