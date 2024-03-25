@@ -1,0 +1,15 @@
+.flex{
+    display: flex;
+    border: 3px solid black;
+    flex-direction: column;
+}
+.semi-main{
+    height: 100vh; /* tinggi container sesuai tinggi layar */
+    background-color: azure;
+    margin-top: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.container1{
+    background-color:   red;
+}

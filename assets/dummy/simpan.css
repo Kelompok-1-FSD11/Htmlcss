@@ -1,0 +1,146 @@
+/* simpan.css */
+.zero {
+    position: relative;
+}
+
+.font-itemkuV2 {
+    max-width: 98%;
+    margin: auto;
+    width: auto;
+    margin-top: 0;
+}
+
+.font-itemkuV2 .ds-text-xl {
+    font-size: 1.25rem;
+}
+
+.font-itemkuV2 .ds-text-xl.ds-leading-6 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.font-itemkuV2 {
+    font-size: 1.3125rem;
+    line-height: 1.6875rem;
+}
+
+.font-itemkuV2 .ds-font-bold {
+    font-weight: 700;
+}
+
+.font-itemkuV2 .ds-font-normal {
+    font-weight: 400;
+}
+
+.font-itemkuV2 p {
+    margin: 0;
+}
+
+.font-itemkuV2 img {
+    width: auto;
+    height: 100%;
+}
+
+.font-itemkuV2 .flex {
+    display: flex;
+}
+
+.font-itemkuV2 .flex.space-x-4 {
+    margin-right: -1rem;
+    margin-left: -1rem;
+}
+
+.font-itemkuV2 .flex.items-center {
+    align-items: center;
+}
+
+.font-itemkuV2 .flex.items-end {
+    align-items: flex-end;
+}
+
+.font-itemkuV2 .flex.justify-between {
+    justify-content: space-between;
+}
+
+.font-itemkuV2 .flex.w-16 {
+    width: 4rem;
+}
+
+.font-itemkuV2 .flex.h-16 {
+    height: 4rem;
+}
+
+.font-itemkuV2 .flex.w-full {
+    width: 100%;
+}
+
+.font-itemkuV2 .mt-3 {
+    margin-top: 0.75rem;
+}
+
+.font-itemkuV2 .mt-6 {
+    margin-top: 1.5rem;
+}
+
+.font-itemkuV2 .py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.font-itemkuV2 .px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.font-itemkuV2 .w-8 {
+    width: 2rem;
+}
+
+.font-itemkuV2 .h-8 {
+    height: 2rem;
+}
+
+.font-itemkuV2 .overflow-clip {
+    overflow: hidden;
+}
+
+.font-itemkuV2 .cursor-pointer {
+    cursor: pointer;
+}
+
+.font-itemkuV2 .rounded-t {
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+}
+
+.font-itemkuV2 .border-t {
+    border-top-width: 1px;
+}
+
+.font-itemkuV2 .border-r {
+    border-right-width: 1px;
+}
+
+.font-itemkuV2 .border-l {
+    border-left-width: 1px;
+}
+
+.font-itemkuV2 .border-b {
+    border-bottom-width: 1px;
+}
+
+.font-itemkuV2 .bg-cyan-blue-100\/75 {
+    background-color: rgba(0, 191, 255, 0.75);
+}
+
+.font-itemkuV2 .bg-cyan-blue-100\/50 {
+    background-color: rgba(0, 191, 255, 0.5);
+}
+
+.font-itemkuV2 .border-cyan-blue-200 {
+    border-color: #6A6AD9;
+}
+
+.font-itemkuV2 .hover\:bg-cyan-blue-100\/50:hover {
+    background-color: rgba(0, 191, 255, 0.5);
+}
