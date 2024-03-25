@@ -1,0 +1,198 @@
+/* Mengatur tata letak utama */
+.flex {
+    
+    flex: 1 100%;
+    
+}
+.semi-main{
+    height: 100vh; /* tinggi container sesuai tinggi layar */
+    background-color: azure;
+    margin-top: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.bungkus1 {
+    display: inline-flex;
+    width: 100%;
+    display: flexbox;
+    margin-top: 20px; /* Berikan jarak atas */
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Pusatkan vertikal konten */
+}
+
+.img-wrapper {
+    margin-right: 10px; /* Berikan jarak kanan */
+    flex: 1 ;
+    width: 48px;
+}
+
+.text-wrapper {
+    flex: 3;
+    justify-content: flex-start;
+}
+.bungkus2{
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+}
+.conten{
+    margin: 10px;
+    font-size: 20px;
+    justify-content:space-between;
+    display: flex;
+    border: 1px solid rgb(126, 129, 131);
+    border-radius: 5px;
+    padding-right: 5px;
+    box-shadow: inset;
+    box-sizing: border-box;
+}
+.terpilih{
+    border: 2px solid blue;
+}
+.posisi-img{
+    position: relative;
+    border-radius: 15px;
+}
+.posisi-img img {
+    width: 28px; /* Mengisi lebar dari parent-nya */
+    height: 28px; /* Menjaga aspek rasio gambar */
+}
+.posisi-judul{
+    margin: 1px;
+}
+.posisi-judul p{
+    /* text-align: center; */
+    padding-top: 3px;
+}
+.bungkus3{
+    height: max-content;
+    width: 100%;
+    background-color: #dceef1;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    /* align-content: center; */
+    /* justify-content: flex-end; */
+
+}
+.isi-top-up{
+    display: 1;
+    background-color: transparent;
+    width: 100%;
+    margin-left: 15px;
+    justify-content: center;
+    align-items: flex-start;    
+}
+.box {
+    position: relative; /* Menjadikan posisi relative untuk elemen box */
+    flex: 1;
+    margin-top: 40px;
+    background-color: rgba(26, 45, 218, 0.733);
+    /* border: 1px solid black; */
+    border-radius: 16px;
+    height: 78px;
+    width: auto;
+    display: flex;
+    align-items: center; /* Untuk menengahkan vertikal */
+    justify-content: center; /* Untuk menengahkan horizontal */
+}
+
+.unt-gmbr {
+    position: absolute; /* Menjadikan posisi absolute untuk elemen gambar */
+    /* top: 0; Menjadikan posisi gambar di bagian atas */
+    top: -30%; /* Menggeser gambar ke atas sejauh 30% dari kotak */
+    left: 50%; /* Menjadikan posisi gambar di tengah horizontal */
+    transform: translateX(-50%); /* Menggeser gambar ke kiri sejauh setengah lebar elemen */
+    background-color: rgba(26, 45, 218, 0.733);
+}
+
+.unt-gmbr img {
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 870px) {
+    .conten{
+        margin: 15px;
+        font-size: 15px;
+        /* justify-content:space-between; */
+        display: flex;
+        /* border: 1px solid rgb(126, 129, 131); */
+        border-radius: 5px;
+    }
+    .posisi-img img{
+        width: 1px;
+        height: 1px;
+    }
+    .posisi-judul p{
+        -ms-text-size-adjust: auto;
+    }
+    .box{
+        height: 48px;
+        /* margin-top: 118px; */
+        margin: 5px;
+    }
+    .unt-gmbr img {
+        height: 40px; /* Mengubah tinggi gambar sesuai proporsi */
+        width: 40px; /* Mengisi lebar kotak */
+    }
+}
+
+/* CSS untuk ukuran layar kecil (375 x 667) */
+@media only screen and (max-width: 375px) {
+    .conten{
+        margin: 0;
+        font-size: 10px;
+        /* justify-content:space-between; */
+        display: flex;
+        /* border: 1px solid rgb(126, 129, 131); */
+        border-radius: 5px;
+    }
+    .posisi-img img{
+        width: 1px;
+        height: 1px;
+    }
+    .posisi-judul p{
+        -ms-text-size-adjust: auto;
+    }
+    .bungkus3{
+        position: relative;
+        flex-wrap: wrap     ;
+    }
+    .isi-top-up{
+        /* background-color: black; */
+        box-sizing: border-box;
+        margin-left: 0;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .box {
+        height: 40px; /* Menyesuaikan tinggi kotak dengan konten */
+        width: 40px;
+        /* padding: 10px; */
+        border-radius: 5px;
+    } 
+    .unt-gmbr {
+        flex-wrap: wrap;
+        position: absolute; /* Mengubah posisi gambar menjadi relatif kembali */
+        top: 0; /* Mengatur ulang posisi gambar */
+        left: 0; /* Mengatur ulang posisi gambar */
+        transform: translateX(-50%); /* Menghilangkan transformasi */
+        margin-top:0; /* Memberikan ruang di atas gambar */
+        width: 100%; /* Mengisi lebar kotak */
+        text-align: center; /* Menengahkan gambar */
+    }
+
+    .unt-gmbr img {
+        height: 35px; /* Mengubah tinggi gambar sesuai proporsi */
+        width: 35px; /* Mengisi lebar kotak */
+    }
+}
+
+
