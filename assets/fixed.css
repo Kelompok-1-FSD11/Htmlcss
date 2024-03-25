@@ -17,6 +17,7 @@
     text-align: center;
     box-sizing: border-box;
     font-size: 30px;
+    /* border: 1px solid #d1cccc; */
 }
 .header-content{
     display: flex;
@@ -147,14 +148,24 @@
 
 
 /* bagian untuk menu berikutnya */
+/* .container2 {
+    flex: 1 100%;
+    width: fit-content;
+    height: 400px;
+
+} */
 .container2 {
     flex: 1 100%;
     width: fit-content;
-    /* background-color: bisque; */
-    /* margin: 10px; */
-    /* box-sizing: border-box; */
-    /* border: 1px solid black; */
+    height: 400px;
+    /* border: 1px solid #d1cccc; */
+    /* Other styles */
+    /* transition: transform 0.3s ease;  */
 }
+
+/* .container2:hover {
+    transform: scale(1.05); 
+} */
 
 .flex-container {
     display: flex;
@@ -201,14 +212,18 @@
 .nama{
     height: 100px;
     /* background-color: aqua; */
-    border: #007bff solid 1px;
+    border: #007bff solid 2px;
+    border-radius: 5px;
+    margin: 5px;
     flex: 1;
 }
 .rating{
     flex: 1;
     height: 100px;
     /* background-color: rgb(77, 53, 184); */
-    border: #007bff solid 1px;
+    border: #007bff solid 2px;
+    border-radius: 5px;
+    margin: 5px;
 }
 .rating img{
     flex: 1;
@@ -233,6 +248,7 @@
     flex: 1 100%;
     width: 500px;
     margin: 10px;
+    /* border: 1px solid #d1cccc; */
     /* background-color: red; */
 }
 .bungkus-isi{
