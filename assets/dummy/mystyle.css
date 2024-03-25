@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'        );
+
+
+
+* ,
+::after ,
+::before    {
+    font-family: 'poppins' , sans-serif;
+    box-sizing: border-box;
+}
+
+body    {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' sans-serif;
+    word-spacing: 1.4px;
+    height: 100vh;
+    line-height: 1.2rem;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: ghostwhite;
+    overflow: thin;
+}
+
+.container-belicepat     {
+    width: 100%;
+    height: 350px;
+    margin: 40px 10px 20px 10px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(https://files.itemku.com/bg/quickbuy-bg.svg);
+    background-repeat: no-repeat;
+    background-color: rgb(24, 63, 113);
+    background-position-x: 70%;
+    clip-path: polygon(43% 0, 45% 6%, 100% 6%, 100% 95%, 62% 95%, 60% 100%, 0 100%, 0 0);
+}
+
+.container-adayangbarunih    {
+    width: 100%;
+    height: 350px;
+    margin: 40px 10px 20px 10px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-image: url(https://files.itemku.com/bg/quickbuy-bg.svg); */
+    background-repeat: no-repeat;
+    background-color: ghostwhite;
+    background-position-x: 70%;
+    clip-path: polygon(43% 0, 45% 6%, 100% 6%, 100% 95%, 62% 95%, 60% 100%, 0 100%, 0 0);
+}
+
+
+.item1-belicepat,
+.item2-belicepat,   
+.item3-belicepat,
+.item1-adayangbarunih, 
+.item3-adayangbarunih     {
+    gap: 1.25rem;
+    display: flex;    
+}
+
+.item1-adayangbarunih      {
+    height: 60px;
+    width: 1185px;  
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    gap: 1.75rem;
+    position: relative;
+}
+
+.item1-belicepat  {
+    height: 60px;
+    width: 1185px;  
+    display: flex;
+    flex-direction: row;
+    gap: 1.75rem;
+}
+
+.item2-belicepat     {
+    width: 1185px;
+    height: 90px;
+}
+
+.item3-belicepat      {
+    width: 1185px;
+    height: 130px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem ;
+}
+
+.item3-adayangbarunih      {
+    width: 1185px;
+    height: 165px;
+    margin-bottom: 70px;
+    padding: 0.5rem 0.5rem 1.5rem 1.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem ;
+    background-color: rgb(234 242 252) ;
+    border: 1px solid white;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    /* scroll properties */
+    overflow-x: scroll;
+    overflow-y: clip;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    scrollbar-color: transparent;
+    scroll-padding-left: 1rem;
+    scroll-padding-right: 1rem;
+}
+
+
+.item3-adayangbarunih .image-item3    {
+    scroll-snap-align: always;
+}
+
+.box-item1-1        {
+    display: flex;
+    width: 60px;
+    height: auto;
+    margin-right: 0.25rem;
+    position: relative;
+}
+
+.svg-img-belicepat      {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.box-item1-2      {
+    /* border: 2px solid black; */
+    width: 15%;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+}
+
+.box-item1-2-adayangbarunih      {
+    width: 25%;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    position: absolute;
+    top: 35px;
+    left: 5.5rem;
+}
+
+.belicepat      {
+    font-weight: 700;
+    font-size: 24px;
+    line-height:2rem;
+    color: white ;
+    margin: 0;
+}
+
+.adayangbarunih     {
+    font-weight: 700;
+    font-size: 24px;
+    line-height:2rem;
+    color: black ;
+    margin: 0;
+}
+
+.svg-background    {
+    background-image: url(https://files.itemku.com/icon/product-icon/homepage-revamp/beli-cepat.svg);
+    background-size: cover;
+}
+
+.svg-background-adayangbarunih      {
+    background-image: url(https://files.itemku.com/icon/product-icon/homepage-revamp/new-stuffs.svg);
+    background-size: cover;
+}
+
+.container-item2        {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2rem  ;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    flex-wrap: nowrap;
+}
+
+.btn-item2      {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: transparent;
+}
+
+.btn-item2 a     {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.btn-item2 a:before,
+.btn-item2 a:after      {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: cornsilk;
+    transition: 0,5%;
+    text-decoration: none   ;
+}
+
+.btn-item2 a:hover:before   {
+    inset: -3px;
+}
+
+.btn-item2 a:hover:after        {
+    inset: -3px;
+    filter: blur(10px);
+}
+
+.btn-item2 a span   {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: rgb(24, 63, 113);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+
+/* item3  */
+
+main-container-item3     {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    flex-direction: column;
+    position: relative; 
+    height: 100px;
+    width: 100%;
+    margin-bottom: 30px;
+    
+}
+
+.img-Higgsdomino        {
+    width: 72px;
+    height: 72px;
+    position: relative;
+    margin-left: 25px;
+    top: 40px;
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+}
+
+.img-Higgsdomino img       {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-para-item3       {
+    background: linear-gradient(180deg, rgb(156 175 198 / 24%), rgba(24, 89, 170, .94) 56.97%) ;
+    width: 120px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    margin-top: 1.25rem;
+    clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
+}
+
+.paragh-img-item3       {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragh-img-item3  p     {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    line-height: 1.25rem;
+    color: #fff;
+    
+}
+
+
+/* link element belicepat */
+
+.link       {
+    text-decoration: none;
+    
+}
+
+
+/* feature Iklan slide  */
+
+.iklan-slider   {
+    width: 63rem;
+    height: 38.25rem;
+    border-width: 0.25rem;
+    border-radius: 0.3rem;
+    line-height: 0.25rem;
+    margin: 1rem 1rem ;
+}
+
+.iklan-1-container      {
+    position: relative;
+}
+
+.iklan-2-container      {
+    display: flex;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    width: 1007px;
+    height: 155px;
+    gap: 0.75rem;
+   
+}
+
+.iklan-2-item1 .iklan-2-item2     {
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+}
+
+
+
+
+
+
+@media (width < 480px )    {
+    .container-belicepat     {
+        width: 375px;
+        height: 355px;
+        margin: 40px 10px 20px 10px;    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url(https://files.itemku.com/bg/quickbuy-bg.svg);
+        background-repeat: no-repeat;
+        background-color: rgb(24, 63, 113);
+        background-position-x: 70%;
+        clip-path: polygon(43% 0, 45% 6%, 100% 6%, 100% 95%, 62% 95%, 60% 100%, 0 100%, 0 0);
+    }
+}
+
+
+
+
+
+
+
+
+@media (width < 400px)   {
+    .container-belicepat     {
+        width: 400px;
+        height: 355px;
+        margin: 10px 3px 6px 3px;    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        flex-wrap: wrap;
+        align-items: center;
+        background-image: url(https://files.itemku.com/bg/quickbuy-bg.svg);
+        background-repeat: no-repeat;
+        background-color: rgb(24, 63, 113);
+        background-position-x: 70%;
+    }
+    
+    .container-adayangbarunih    {
+        width: 400px;
+        height: 355px;
+        margin: 10px 3px 6px 3px;    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-color: ghostwhite;
+        background-position-x: 70%;
+    }
+    
+    
+    .item1-belicepat,
+    .item2-belicepat,   
+    .item3-belicepat,
+    .item1-adayangbarunih, 
+    .item3-adayangbarunih     {
+        gap: 0.25rem;
+        display: flex;    
+    }
+    
+    .item1-adayangbarunih      {
+        height: 60px;
+        width: 400px;  
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+        gap: 1rem;
+        position: relative;
+    }
+    
+    .item1-belicepat  {
+        height: 60px;
+        width: 400px;  
+        display: flex;
+        flex-direction: row;
+        gap: 0.50rem;
+    }
+    
+    .item2-belicepat     {
+        width: 760px;
+        height: 90px;
+    }
+    
+    .item3-belicepat      {
+        width: 400px;
+        height: 130px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem ;
+    }
+    
+    .item3-adayangbarunih      {
+        width: 400px;
+        height: 165px;
+        margin-bottom: 70px;
+        padding: 0.5rem 0.5rem 1.5rem 1.5rem;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem ;
+        background-color: rgb(234 242 252) ;
+        border: 1px solid white;
+        border-radius: 0.25rem;
+        border-width: 1px;
+        /* scroll properties */
+        overflow-x: scroll;
+        overflow-y: clip;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        scrollbar-color: transparent;
+        scroll-padding-left: 1rem;
+        scroll-padding-right: 1rem;
+    }
+    
+    
+    .item3-adayangbarunih .image-item3    {
+        scroll-snap-align: always;
+    }
+    
+    .box-item1-1        {
+        display: flex;
+        width: 60px;
+        height: auto;
+        margin-right: 0.25rem;
+        position: relative;
+    }
+    
+    .svg-img-belicepat      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+    
+    .box-item1-2      {
+        /* border: 2px solid black; */
+        width: 15%;
+        display: flex;
+        align-items: end;
+        justify-content: start;
+    }
+    
+    .box-item1-2-adayangbarunih      {
+        width: 25%;
+        display: flex;
+        align-items: end;
+        justify-content: start;
+        position: absolute;
+        top: 35px;
+        left: 5.5rem;
+    }
+    
+    .belicepat      {
+        font-weight: 700;
+        font-size: 24px;
+        line-height:2rem;
+        color: white ;
+        margin: 0;
+    }
+    
+    .adayangbarunih     {
+        font-weight: 700;
+        font-size: 24px;
+        line-height:2rem;
+        color: black ;
+        margin: 0;
+    }
+    
+    .svg-background    {
+        background-image: url(https://files.itemku.com/icon/product-icon/homepage-revamp/beli-cepat.svg);
+        background-size: cover;
+    }
+    
+    .svg-background-adayangbarunih      {
+        background-image: url(https://files.itemku.com/icon/product-icon/homepage-revamp/new-stuffs.svg);
+        background-size: cover;
+    }
+    
+    .container-item2        {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.2rem  ;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        flex-wrap: nowrap;
+    }
+    
+    .btn-item2      {
+        padding-top: 27px;
+        padding-bottom: 27px;
+        background-color: transparent;
+    }
+    
+    .btn-item2 a     {
+        position: relative;
+        width: fit-content;
+        display: inline-block;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        text-decoration: none;
+    }
+    
+    .btn-item2 a:before,
+    .btn-item2 a:after      {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: cornsilk;
+        transition: 0,5%;
+        text-decoration: none   ;
+    }
+    
+    .btn-item2 a:hover:before   {
+        inset: -3px;
+    }
+    
+    .btn-item2 a:hover:after        {
+        inset: -3px;
+        filter: blur(10px);
+    }
+    
+    .btn-item2 a span   {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        background-color: rgb(24, 63, 113);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 2px;
+    }
+    
+    /* item3  */
+    
+    main-container-item3     {
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+        flex-direction: column;
+        position: relative; 
+        height: 100px;
+        width: 100%;
+        margin-bottom: 30px;
+        
+    }
+    
+    .img-Higgsdomino        {
+        width: 72px;
+        height: 72px;
+        position: relative;
+        margin-left: 25px;
+        top: 40px;
+        box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+    }
+    
+    .img-Higgsdomino img       {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .image-para-item3       {
+        background: linear-gradient(180deg, rgb(156 175 198 / 24%), rgba(24, 89, 170, .94) 56.97%) ;
+        width: 120px;
+        height: 92px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        text-align: center;
+        margin-top: 1.25rem;
+        clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
+    }
+    
+    .paragh-img-item3       {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .paragh-img-item3  p     {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 1.25rem;
+        line-height: 1.25rem;
+        color: #fff;
+        
+    }
+    
+    
+    /* link element belicepat */
+    
+    .link       {
+        text-decoration: none;
+        
+    }
+    
+    
+    /* feature Iklan slide  */
+    
+    .iklan-slider   {
+        width: 63rem;
+        height: 38.25rem;
+        border-width: 0.25rem;
+        border-radius: 0.3rem;
+        line-height: 0.25rem;
+        margin: 1rem 1rem ;
+    }
+    
+    .iklan-1-container      {
+        position: relative;
+    }
+    
+    .iklan-2-container      {
+        display: flex;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+        width: 400px;
+        height: 155px;
+        gap: 0.75rem;
+       
+    }
+    
+    .iklan-2-item1 .iklan-2-item2     {
+        width: 50%;
+        height: 100%;
+        background-color: blue;
+    }
+}

@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Product</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <link rel="stylesheet" href="asset/detail-product.css" />
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/assets/navbar.css">
+    <link rel="stylesheet" href="/assets/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <div class="nav-block">
+          <div class="nav-link-container">
+              <a href="#" class="nav-link">🎉 Mainkan Giveaway</a>
+              <a href="#" class="nav-link">Promo</a>
+              <a href="#" class="nav-link">Itemku Play</a>
+              <a href="#" class="nav-link">Jualan di Itemku</a>
+          </div>
+      </div>
+      <div class="nav-container">
+          <div class="nav-logo-button-and-search">
+              <div class="small-nav-logo">
+                  <img class="smaller-display" src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fitemku%2Fitemku-logo-transparent.png&w=48&q=75" alt="small-logo">
+              </div>
+              <div class="nav-logo">
+                  <img class="full-display" src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fitemku%2Fitemku-logo-color-transparent.png&w=140&q=75" alt="big-logo">
+              </div>
+              <button type="button" class="nav-button-category-cart">
+                  <i class="fa-solid fa-list"></i>
+                  <div class="button-category-text">
+                      <div class="hidden-text">
+                          Kategori
+                      </div>
+                  </div>
+              </button>
+              <div class="nav-search">
+                  <form action="#" class="search-bar">
+                      <input type="text" placeholder="Coba cari Game" name="search" >
+                      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </form>
+              </div>
+              <div class="nav-button-cart">
+                  <button type="button" class="nav-button-category-cart">
+                      <i class="fa-solid fa-cart-shopping button-cart-text"></i></button>
+              </div>
+              <div class="nav-button-user-account">
+                  <button type="button" class="button-sign-up">
+                      <div class="button-text-container">
+                          <div class="button-text">
+                              Daftar
+                          </div>
+                      </div>
+                  </button>
+                  <button type="button" class="button-login">
+                      <div class="button-text-container">
+                          <div class="button-text">
+                              Login
+                          </div>
+                      </div>
+                  </button>
+              </div>
+              <div class="mobile-version-button">
+                  <div class="button-container">
+                      <button>
+                          <i class="fa-regular fa-envelope"></i>
+                      </button>
+                  </div>
+                  <div class="button-container">
+                      <button>
+                          <i class="fa-regular fa-bell"></i>
+                      </button>
+                  </div>
+                  <div class="button-container">
+                      <button>
+                          <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="stage-3-nav-container">
+          <div class="inside-stage-3-container">
+              <div class="stage-3-flex">
+                  <button type="button">Robux</button>
+                  <button type="button">Diamond Lock</button>
+                  <button type="button">Akun ML</button>
+                  <button type="button">Weekly Pass ML</button>
+              </div>
+          </div>
+      </div>
+  </header>
+
+    <div
+      class="max-w-[1250px] mt-28 px-5 mx-auto py-5 max-lg:max-w-[600px] max-lg:border-2 relative"
+    >
+      <!-- Beli Button -->
+      <div
+        class="fixed bottom-2 left-0 right-0 max-lg:flex hidden max-w-[600px] mx-auto z-10"
+      >
+        <button
+          class="w-full bg-[#ef6000] py-2 text-center rounded-lg mx-2 text-white font-semibold"
+        >
+          Beli
+        </button>
+      </div>
+      <!-- Beli Button -->
+
+      <!-- Produk -->
+      <div
+        class="grid grid-cols-10 gap-x-10 relative max-lg:flex max-lg:flex-col"
+      >
+        <!-- Harga & Deskripsi -->
+        <div class="col-span-7">
+          <!-- Poster Dan Harga -->
+          <div id="poster-harga">
+            <div
+              class="flex gap-x-2 items-center text-sm text-blue-500 max-lg:hidden"
+            >
+              Beranda > Kategori > Mobile Legend > Top Up >
+              <span class="text-black"> 986 Diamonds</span>
+            </div>
+            <div class="flex gap-5 py-5 max-lg:flex-col">
+              <div class="flex-1 flex flex-col gap-y-3">
+                <div class="flex-2 h-fit rounded-lg overflow-hidden">
+                  <img
+                    src="/img/poster-main-web.webp"
+                    class="object-cover object-top"
+                    alt=""
+                  />
+                </div>
+                <div class="flex-1 h-fit">
+                  <div class="h-[60px] w-[60px] overflow-hidden rounded-lg">
+                    <img
+                      src="/img/poster-main-web.webp"
+                      class="object-cover object-top h-full"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="flex-1">
+                <div class="w-full">
+                  <div class="flex justify-between w-full">
+                    <p class="text-2xl font-bold">966 Diamonds</p>
+
+                    <div class="flex gap-x-3">
+                      <i class="fa-solid fa-share-nodes"></i>
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-y-3 w-full">
+                    <p class="text-sm">Mobile Legends</p>
+                    <span class="text-3xl font-bold"
+                      >Rp250.000
+                      <span class="text-sm text-black font-normal"
+                        >per 1 Top Up</span
+                      ></span
+                    >
+                    <div class="flex gap-x-2 items-center">
+                      <span
+                        class="p-1 bg-[#ef6000] rounded-md text-sm text-white"
+                        >7%</span
+                      >
+                      <span class="text-sm line-through text-gray-400"
+                        >Rp270.100</span
+                      >
+                    </div>
+                    <img
+                      src="/img/10menit-p.svg"
+                      alt=""
+                      class="w-[100px] h-[20px] object-contain"
+                    />
+                    <div
+                      class="flex w-full justify-around border-2 rounded-md p-4"
+                    >
+                      <div class="flex flex-col gap-y-1 items-center">
+                        <img
+                          src="/img/minimal-beli.svg"
+                          alt="minimal beli"
+                          class="w-7 h-7"
+                        />
+                        <span class="text-sm">Minimal Beli :</span>
+                        <span class="font-semibold">1</span>
+                      </div>
+                      <div class="flex flex-col gap-y-1 items-center">
+                        <img
+                          src="/img/tf-sukses.svg"
+                          alt="minimal beli"
+                          class="w-7 h-7"
+                        />
+                        <span class="text-sm">Transaksi Sukses:</span>
+                        <span class="font-semibold">11769 (99%)</span>
+                      </div>
+                      <div class="flex flex-col gap-y-1 items-center">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="text-sm">Rata-Rata Kirim:</span>
+                        <span class="font-semibold">2 menit</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Poster Dan Harga -->
+          <!-- Deskripsi -->
+          <div class="flex flex-col gap-y-5 mt-10">
+            <span
+              class="p-3 rounded-lg w-full bg-[#e1eeff] border-2 border-[#307fe2]"
+              >Jika tidak menerima produk dalam 10 menit, kamu dapat langsung
+              mengajukan pengembalian dana.</span
+            >
+            <div class="mt-2">
+              <h1 class="font-bold text-lg">
+                Cara Trading Top Up Diamond Mobile Legends
+              </h1>
+              <div
+                class="flex flex-col gap-y-1 text-sm mt-2 max-h-[80px] overflow-hidden transition-all"
+                id="top-up"
+              >
+                <p>1.Pilihlah dagangan dan lakukan pembeliaan</p>
+                <p>2.Perhatikan dagangan dari kategori Event Top Up Diamond</p>
+                <p>3.Masukan informasi yang di butuhkan untuk Top-Up</p>
+                <p>
+                  4.Menghindari kesalahan pengisian User ID,Pastikan kamu
+                  mengisi User ID Mobile Legends kamu dengan angka yang benar.
+                </p>
+                <p>5.Lakukan pembayaran atas pesanan kamu</p>
+                <p>6.Tunggu sampai penjual memproses pesanan kamu</p>
+                <p>
+                  7.Jika sudah terkirim cek kembali Diamond Mobile Legends kamu
+                </p>
+                <p>
+                  Jika sudah sesuai, klik Selesai untuk menyelesaikan pesanan
+                  kamu
+                </p>
+              </div>
+              <span
+                class="cursor-pointer flex items-center justify-center text-blue-400 font-medium mt-5"
+                id="tampilkan-top-up"
+                >Tampilkan Lebih Banyak</span
+              >
+            </div>
+            <div class="mt-2">
+              <h1 class="font-bold text-lg">Deskripsi Produk</h1>
+              <div
+                class="flex flex-col gap-y-1 text-sm mt-2 max-h-[80px] overflow-hidden transition-all"
+                id="deskripsi"
+              >
+                <p>KEVIN STORE</p>
+                <p>Hii MLers,</p>
+                <p>Welcome To KevinStoree</p>
+                <p>Cara Order??</p>
+                <p>ID Nick Server (4 Angka Belakang ID)</p>
+                <p>Terimakasih,,</p>
+                <p>Happy Shopping 👌</p>
+              </div>
+              <span
+                class="flex items-center justify-center text-blue-400 font-medium mt-5"
+                id="tampilkan-deskripsi"
+                >Tampilkan Lebih Banyak</span
+              >
+            </div>
+          </div>
+          <!-- Deskripsi -->
+          <div class="border my-5"></div>
+          <!-- Nama Toko -->
+          <div class="">
+            <span class="font-bold">Toko</span>
+            <div class="flex gap-x-2 mt-2">
+              <div class="flex flex-col justify-center items-center gap-y-2">
+                <div class="w-12 h-12 rounded-full overflow-hidden">
+                  <img src="/img/toko-img.webp" class="w-full h-full" alt="" />
+                </div>
+              </div>
+              <div class="flex flex-col justify-center">
+                <div class="flex gap-x-2 justify-center items-center">
+                  <div class="flex justify-center items-center gap-x-1">
+                    <img src="/img/tier-toko.svg" class="w-4 h-4" alt="" />
+                    <span>Kevin Store</span>
+                  </div>
+                  <span class="flex items-center justify-center gap-x-1">
+                    <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                    4.8 / 5.0
+                  </span>
+                </div>
+                <span class="text-xs">Aktif 21 Menit yang lalu</span>
+              </div>
+            </div>
+          </div>
+          <!-- Nama Toko -->
+          <div class="border my-5"></div>
+          <!-- Slider | Denom lainnya di Toko ini -->
+          <div class="flex flex-col gap-y-1">
+            <span class="font-medium">Denom lainnya di Toko ini</span>
+            <div class="slick-slider">
+              <div>
+                <div class="flex flex-col gap-y-2 border rounded-md p-3 mx-1">
+                  <span>14 Diamonds</span>
+                  <span
+                    class="border text-[12px] border-black px-2 rounded-md text-[#208060] w-fit"
+                    >Stok 999+
+                  </span>
+                  <span class="text-sm">Rp4.400</span>
+                </div>
+              </div>
+              <div>
+                <div class="flex flex-col gap-y-2 border rounded-md p-3 mx-1">
+                  <span>15 Diamonds</span>
+                  <span
+                    class="border text-[12px] border-black px-2 rounded-md text-[#208060] w-fit"
+                    >Stok 999+
+                  </span>
+                  <span class="text-sm">Rp4.600</span>
+                </div>
+              </div>
+              <div>
+                <div class="flex flex-col gap-y-2 border rounded-md p-3 mx-1">
+                  <span>17 Diamonds</span>
+                  <span
+                    class="border text-[12px] border-black px-2 rounded-md text-[#208060] w-fit"
+                    >Stok 999+
+                  </span>
+                  <span class="text-sm">Rp5.100</span>
+                </div>
+              </div>
+              <div>
+                <div class="flex flex-col gap-y-2 border rounded-md p-3 mx-1">
+                  <span>19 Diamonds</span>
+                  <span
+                    class="border text-[12px] border-black px-2 rounded-md text-[#208060] w-fit"
+                    >Stok 999+
+                  </span>
+                  <span class="text-sm">Rp5.600</span>
+                </div>
+              </div>
+              <div>
+                <div class="flex flex-col gap-y-2 border rounded-md p-3 mx-1">
+                  <span>11 Diamonds</span>
+                  <span
+                    class="border text-[12px] border-black px-2 rounded-md text-[#208060] w-fit"
+                    >Stok 999+
+                  </span>
+                  <span class="text-sm">Rp4.000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slider | Denom lainnya di Toko ini -->
+          <div class="border my-5"></div>
+          <!-- Slider | Ulasan -->
+          <div class="flex flex-col gap-y-1 max-lg:my-5">
+            <div class="flex w-full justify-between mb-3">
+              <div class="flex gap-x-2 items-center">
+                <span class="font-medium">Ulasan Terakhir</span>
+                <span class="text-sm">
+                  4.9/5
+                  <i class="fa-solid fa-star fa-xs" style="color: #ffd43b"></i>
+                </span>
+              </div>
+              <span class="font-semibold text-[#307fe2]">Lihat Semua</span>
+            </div>
+            <div class="slick-slider-ulasan">
+              <div>
+                <div
+                  class="flex flex-col gap-y-3 border rounded-md p-3 m-2 max-w-[280px] max-lg:max-w-[250px]"
+                >
+                  <div class="flex w-full justify-between items-center">
+                    <span class="font-semibold">J**n</span>
+                    <span class="text-gray-600 text-xs">Hari ini</span>
+                  </div>
+                  <div class="flex gap-x-2">
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                  </div>
+                  <div class="flex flex-wrap mt-3">
+                    <span class="py-1 px-3 rounded-full border text-xs"
+                      >Pengiriman Cepat</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex flex-col gap-y-3 border rounded-md p-3 mx-1 max-w-[280px] max-lg:max-w-[250px]"
+                >
+                  <div class="flex w-full justify-between items-center">
+                    <span class="font-semibold">M**D</span>
+                    <span class="text-gray-600 text-xs">Kemarin</span>
+                  </div>
+                  <div class="flex gap-x-2">
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                  </div>
+                  <div class="flex flex-wrap mt-3 gap-2">
+                    <span class="py-1 px-3 rounded-full border text-xs"
+                      >Pengiriman Cepat</span
+                    >
+                    <span class="py-1 px-3 rounded-full border text-xs"
+                      >Produk Sesuai</span
+                    >
+                    <span class="py-1 px-3 rounded-full border text-xs"
+                      >Respon Cepat</span
+                    >
+                    <span class="py-1 px-3 rounded-full border text-xs"
+                      >Penjual Ramah</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex flex-col gap-y-3 border rounded-md p-3 mx-2 max-w-[280px] max-lg:max-w-[250px]"
+                >
+                  <div class="flex w-full justify-between items-center">
+                    <span class="font-semibold">R**I</span>
+                    <span class="text-gray-600 text-xs">3 hari lalu</span>
+                  </div>
+                  <div class="flex gap-x-2">
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                  </div>
+                  <div class="flex flex-wrap mt-3 gap-2">
+                    <span class="py-1 px-3 rounded-full border text-xs"
+                      >Produk Sesuai</span
+                    >
+                    <span class="py-1 px-3 rounded-full border text-xs"
+                      >Respon Cepat</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex flex-col gap-y-3 border rounded-md p-3 m-2 max-w-[280px] max-lg:max-w-[250px]"
+                >
+                  <div class="flex w-full justify-between items-center">
+                    <span class="font-semibold">K**A</span>
+                    <span class="text-gray-600 text-xs">4 Hari lalu</span>
+                  </div>
+                  <div class="flex gap-x-2">
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #8d8d8d"
+                    ></i>
+                  </div>
+                  <div class="flex flex-wrap mt-3">
+                    <span class="py-1 px-3 rounded-full border text-xs"
+                      >Pengiriman Cepat</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Paket Bundling  -->
+          <div class="my-8 hidden max-lg:block">
+            <div class="flex flex-col my-3 gap-y-2">
+              <span class="font-semibold text-lg"
+                >Paket Bundling Hemat di Mobile Legends</span
+              >
+              <span class="text-sm"
+                >Produk yang tampil merupakan produk yang telah dipilih oleh
+                itemku</span
+              >
+            </div>
+            <div class="flex gap-5 mt-4 items-center flex-wrap">
+              <div
+                class="min-w-[250px] border-2 rounded-lg flex flex-col gap-y-10"
+              >
+                <div class="p-2 flex flex-col">
+                  <span>966 Diamonds</span>
+                  <div class="flex gap-x-2 my-2 items-center">
+                    <span class="p-1 bg-rose-500 text-white rounded-md text-xs"
+                      >7%</span
+                    >
+                    <span class="line-through text-xs text-gray-400"
+                      >Rp271.100</span
+                    >
+                  </div>
+                  <span class="text-orange-500 font-semibold">Rp250.000</span>
+                </div>
+                <div class="p-2 flex gap-x-3 items-center pt-3 border-t">
+                  <i class="fas fa-store" style="color: #0593ff"></i>
+                  <span class="text-sm">Kevin Store</span>
+                </div>
+              </div>
+              <span>
+                <i class="fas fa-plus"></i>
+              </span>
+              <div
+                class="min-w-[250px] border-2 rounded-lg flex flex-col gap-y-10"
+              >
+                <div class="p-2 flex flex-col">
+                  <span>Starlight Membership (30 Days)</span>
+                  <div class="flex gap-x-2 my-2 items-center">
+                    <span class="p-1 bg-rose-500 text-white rounded-md text-xs"
+                      >42%</span
+                    >
+                    <span class="line-through text-xs text-gray-400"
+                      >Rp96.100</span
+                    >
+                  </div>
+                  <span class="text-orange-500 font-semibold">Rp250.000</span>
+                </div>
+                <div class="p-2 flex gap-x-3 items-center pt-3 border-t">
+                  <i class="fas fa-store" style="color: #0593ff"></i>
+                  <span class="text-sm">Wantau</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Paket Bundling  -->
+          <!-- Slider | Ulasan -->
+        </div>
+        <!-- Harga & Deskripsi -->
+
+        <!-- Informasi Pesanan -->
+        <div class="col-span-3 relative h-full pb-10 max-lg:hidden">
+          <div class="border p-3 h-fit rounded-lg max-w-[330px] sticky top-10">
+            <div class="flex flex-col">
+              <h2 class="font-bold text-lg">Informasi Pesanan</h2>
+              <!-- ID Pesanan -->
+              <div class="flex flex-col mt-4 gap-y-8">
+                <div class="flex gap-x-4">
+                  <div class="flex flex-col gap-y-1 w-[45%] border-b-2">
+                    <label>User ID</label>
+                    <div class="flex gap-x-1 items-center">
+                      <input
+                        type="text"
+                        class="p-2 w-[100px] focus:outline-none"
+                        placeholder="Contoh:123456"
+                      />
+                      <i class="fa-solid fa-circle-exclamation"></i>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-y-1 w-[45%] border-b-2">
+                    <label>Zone ID</label>
+                    <div class="flex gap-x-1 items-center">
+                      <input
+                        type="text"
+                        class="p-2 w-[100px] focus:outline-none"
+                        placeholder="Contoh:2020."
+                      />
+                      <i class="fa-solid fa-circle-exclamation"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-b">
+                  <span>Catatan untuk Penjual (Optional)</span>
+                  <input type="text" class="p-2 focus:outline-none w-full" />
+                </div>
+                <div class="flex items-center justify-between w-full">
+                  <div class="flex gap-x-2 items-center">
+                    <i class="fa-solid fa-circle-minus fa-xl text-gray-300"></i>
+                    <input
+                      type="text"
+                      class="w-12 border-b focus:outline:none text-center"
+                      value="1"
+                    />
+                    <i class="fa-solid fa-circle-plus fa-xl text-blue-400"></i>
+                  </div>
+                  <span
+                    class="border text-[12px] border-black px-2 rounded-md text-[#208060]"
+                    >Stok 999+</span
+                  >
+                </div>
+              </div>
+              <!-- ID Pesanan -->
+              <!-- Penawaran -->
+              <div class="my-7 py-5 border-y">
+                <div class="flex gap-x-2 items-center">
+                  <input type="checkbox" class="w-5 h-5" />
+                  <span>Ambil Penawaran Ini</span>
+                </div>
+                <div
+                  class="flex gap-x-2 items-center justify-between mt-3 mb-2"
+                >
+                  <span class="">Starlight Membership</span>
+                  <span class="font-bold">Rp209.900</span>
+                </div>
+                <div class="w-full flex justify-between">
+                  <div>
+                    <img src="/img/10menit-p.svg" class="w-20 h-10" alt="" />
+                  </div>
+                  <div class="flex gap-x-2 my-2 items-center">
+                    <span class="p-1 bg-rose-500 text-white rounded-md text-xs"
+                      >42%</span
+                    >
+                    <span class="line-through text-xs text-gray-400"
+                      >Rp96.100</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Penawaran -->
+              <!-- Total -->
+              <div class="flex items-center justify-between">
+                <span class="text-sm">Subtotal</span>
+                <span class="font-bold">Rp250.000</span>
+              </div>
+              <div class="flex items-center gap-x-2 mt-3">
+                <button
+                  class="py-2 flex-1 border rounded-lg text-sm border-[#ef6000]"
+                >
+                  + Troli
+                </button>
+                <button
+                  class="py-2 flex-1 border rounded-lg text-sm bg-[#ef6000] text-white"
+                >
+                  Beli Langsung
+                </button>
+              </div>
+              <!-- Total -->
+            </div>
+          </div>
+        </div>
+        <!-- Informasi Pesanan -->
+      </div>
+      <!-- Produk -->
+      <!-- Slider | Produk Lain-nya -->
+      <div class="relative my-10">
+        <div class="">
+          <div class="flex flex-col gap-y-2">
+            <div class="flex justify-between">
+              <span class="font-semibold text-lg">Pengiriman Tercepat</span>
+              <span class="text-blue-500 font-medium">Lihat Semua</span>
+            </div>
+            <span class="text-sm"
+              >Produk dari penjual-penjual yang memberi Garansi Pengiriman 10
+              menit</span
+            >
+            <div class="slider-produk-lain mt-5">
+              <div>
+                <div
+                  class="flex flex-col rounded-lg overflow-hidden border mx-2"
+                >
+                  <div class="">
+                    <img
+                      src="/img/produk-1.webp"
+                      alt=""
+                      class="h-[120px] object-cover w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-between min-h-[180px] p-3">
+                    <div class="flex flex-col gap-y-1">
+                      <span>596 Diamonds</span>
+                      <span
+                        class="text-orange-500 text-xl font-bold"
+                        >Rp148.900</span
+                      >
+                      <img
+                        src="/img/10menit-p.svg"
+                        alt="10 menit"
+                        class="w-20 h-10"
+                      />
+                    </div>
+                    <span class="text-sm text-gray-400">4956 terjual</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex flex-col rounded-lg overflow-hidden border mx-2"
+                >
+                  <div class="">
+                    <img
+                      src="/img/produk-2.webp"
+                      alt=""
+                      class="h-[120px] object-cover w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-between min-h-[180px] p-3">
+                    <div class="flex flex-col gap-y-1">
+                      <span>403 Diamonds</span>
+                      <span
+                        class="text-orange-500 text-xl font-bold"
+                        >Rp108.900</span
+                      >
+                      <img
+                        src="/img/10menit-p.svg"
+                        alt="10 menit"
+                        class="w-20 h-10"
+                      />
+                    </div>
+                    <span class="text-sm text-gray-400">17956 terjual</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex flex-col rounded-lg overflow-hidden border mx-2"
+                >
+                  <div class="">
+                    <img
+                      src="/img/produk-3.webp"
+                      alt=""
+                      class="h-[120px] object-cover w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-between min-h-[180px] p-3">
+                    <div class="flex flex-col gap-y-1">
+                      <span>Weekly Diamonds Pass </span>
+                      <span
+                        class="text-orange-500 text-xl font-bold"
+                        >Rp28.900</span
+                      >
+                      <img
+                        src="/img/10menit-p.svg"
+                        alt="10 menit"
+                        class="w-20 h-10"
+                      />
+                    </div>
+                    <span class="text-sm text-gray-400">27381 terjual</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex flex-col rounded-lg overflow-hidden border mx-2"
+                >
+                  <div class="">
+                    <img
+                      src="/img/produk-4.webp"
+                      alt=""
+                      class="h-[120px] object-cover w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-between min-h-[180px] p-3">
+                    <div class="flex flex-col gap-y-1">
+                      <span>220 Diamonds</span>
+                      <span
+                        class="text-orange-500 text-xl font-bold"
+                        >Rp68.100</span
+                      >
+                      <img
+                        src="/img/10menit-p.svg"
+                        alt="10 menit"
+                        class="w-20 h-10"
+                      />
+                    </div>
+                    <span class="text-sm text-gray-400">2013 terjual</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex flex-col rounded-lg overflow-hidden border mx-2"
+                >
+                  <div class="">
+                    <img
+                      src="/img/produk-1.webp"
+                      alt=""
+                      class="h-[120px] object-cover w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-between min-h-[180px] p-3">
+                    <div class="flex flex-col gap-y-1">
+                      <span>275 Diamonds</span>
+                      <span
+                        class="text-orange-500 text-xl font-bold"
+                        >Rp75.200</span
+                      >
+                      <img
+                        src="/img/10menit-p.svg"
+                        alt="10 menit"
+                        class="w-20 h-10"
+                      />
+                    </div>
+                    <span class="text-sm text-gray-400">21956 terjual</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex flex-col rounded-lg overflow-hidden border mx-2"
+                >
+                  <div class="">
+                    <img
+                      src="/img/produk-3.webp"
+                      alt=""
+                      class="h-[120px] object-cover w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-between min-h-[180px] p-3">
+                    <div class="flex flex-col gap-y-1">
+                      <span>1159 Diamonds</span>
+                      <span
+                        class="text-orange-500 text-xl font-bold"
+                        >309.500</span
+                      >
+                      <img
+                        src="/img/10menit-p.svg"
+                        alt="10 menit"
+                        class="w-20 h-10"
+                      />
+                    </div>
+                    <span class="text-sm text-gray-400">2013 terjual</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex flex-col rounded-lg overflow-hidden border mx-2"
+                >
+                  <div class="">
+                    <img
+                      src="/img/produk-3.webp"
+                      alt=""
+                      class="h-[120px] object-cover w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-between min-h-[180px] p-3">
+                    <div class="flex flex-col gap-y-1">
+                      <span>Weekly Diamonds Pass </span>
+                      <span
+                        class="text-orange-500 text-xl font-bold"
+                        >Rp28.900</span
+                      >
+                      <img
+                        src="/img/10menit-p.svg"
+                        alt="10 menit"
+                        class="w-20 h-10"
+                      />
+                    </div>
+                    <span class="text-sm text-gray-400">27381 terjual</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex flex-col rounded-lg overflow-hidden border mx-2"
+                >
+                  <div class="">
+                    <img
+                      src="/img/produk-4.webp"
+                      alt=""
+                      class="h-[120px] object-cover w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-between min-h-[180px] p-3">
+                    <div class="flex flex-col gap-y-1">
+                      <span>220 Diamonds</span>
+                      <span
+                        class="text-orange-500 text-xl font-bold"
+                        >Rp68.100</span
+                      >
+                      <img
+                        src="/img/10menit-p.svg"
+                        alt="10 menit"
+                        class="w-20 h-10"
+                      />
+                    </div>
+                    <span class="text-sm text-gray-400">2013 terjual</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slider | Produk Lain-nya -->
+      <!-- Slider | Prodouk Promo -->
+      <div class="relative mb-20">
+        <div class="">
+          <div class="flex flex-col gap-y-2">
+            <div class="flex justify-between">
+              <span class="font-semibold text-lg">Promo Termurah</span>
+              <span class="text-blue-500 font-medium">Lihat Semua</span>
+            </div>
+            <span class="text-sm"
+              >Produk Mobile Legends termurah se-Indonesia. Cari disini!</span
+            >
+            <div class="slider-produk-lain mt-5">
+              <div>
+                <div
+                  class="flex flex-col rounded-lg overflow-hidden border mx-2"
+                >
+                  <div class="">
+                    <img
+                      src="/img/termurah-1.webp"
+                      alt=""
+                      class="h-[120px] object-cover w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-between min-h-[180px] p-3">
+                    <div class="flex flex-col gap-y-1">
+                      <span>3 Diamonds</span>
+                      <span
+                        class="text-orange-500 text-xl font-bold"
+                        >Rp1.300</span
+                      >
+                      <img
+                        src="/img/10menit-p.svg"
+                        alt="10 menit"
+                        class="w-20 h-10"
+                      />
+                    </div>
+                    <span class="text-sm text-gray-400">4956 terjual</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex flex-col rounded-lg overflow-hidden border mx-2"
+                >
+                  <div class="">
+                    <img
+                      src="/img/termurah-2.webp"
+                      alt=""
+                      class="h-[120px] object-cover w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-between min-h-[180px] p-3">
+                    <div class="flex flex-col gap-y-1">
+                      <span>5 Diamonds</span>
+                      <span
+                        class="text-orange-500 text-xl font-bold"
+                        >Rp1.500</span
+                      >
+                      <img
+                        src="/img/10menit-p.svg"
+                        alt="10 menit"
+                        class="w-20 h-10"
+                      />
+                    </div>
+                    <span class="text-sm text-gray-400">134 terjual</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex flex-col rounded-lg overflow-hidden border mx-2"
+                >
+                  <div class="">
+                    <img
+                      src="/img/termurah-3.webp"
+                      alt=""
+                      class="h-[120px] object-cover w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-between min-h-[180px] p-3">
+                    <div class="flex flex-col gap-y-1">
+                      <span>5 Diamonds</span>
+                      <span
+                        class="text-orange-500 text-xl font-bold"
+                        >Rp1.300</span
+                      >
+                      <img
+                        src="/img/10menit-p.svg"
+                        alt="10 menit"
+                        class="w-20 h-10"
+                      />
+                    </div>
+                    <span class="text-sm text-gray-400">453 terjual</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex flex-col rounded-lg overflow-hidden border mx-2"
+                >
+                  <div class="">
+                    <img
+                      src="/img/termurah-4.webp"
+                      alt=""
+                      class="h-[120px] object-cover w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-between min-h-[180px] p-3">
+                    <div class="flex flex-col gap-y-1">
+                      <span>5 Diamonds</span>
+                      <span
+                        class="text-orange-500 text-xl font-bold"
+                        >Rp1.400</span
+                      >
+                      <img
+                        src="/img/10menit-p.svg"
+                        alt="10 menit"
+                        class="w-20 h-10"
+                      />
+                    </div>
+                    <span class="text-sm text-gray-400">291 terjual</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex flex-col rounded-lg overflow-hidden border mx-2"
+                >
+                  <div class="">
+                    <img
+                      src="/img/termurah-5.webp"
+                      alt=""
+                      class="h-[120px] object-cover w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-between min-h-[180px] p-3">
+                    <div class="flex flex-col gap-y-1">
+                      <span>4 Diamonds</span>
+                      <span
+                        class="text-orange-500 text-xl font-bold"
+                        >Rp1.300</span
+                      >
+                      <img
+                        src="/img/10menit-p.svg"
+                        alt="10 menit"
+                        class="w-20 h-10"
+                      />
+                    </div>
+                    <span class="text-sm text-gray-400">82 terjual</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex flex-col rounded-lg overflow-hidden border mx-2"
+                >
+                  <div class="">
+                    <img
+                      src="/img/termurah-6.webp"
+                      alt=""
+                      class="h-[120px] object-cover w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-between min-h-[180px] p-3">
+                    <div class="flex flex-col gap-y-1">
+                      <span>5 Diamonds</span>
+                      <span
+                        class="text-orange-500 text-xl font-bold"
+                        >Rp1.600</span
+                      >
+                      <img
+                        src="/img/10menit-p.svg"
+                        alt="10 menit"
+                        class="w-20 h-10"
+                      />
+                    </div>
+                    <span class="text-sm text-gray-400">36 terjual</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex flex-col rounded-lg overflow-hidden border mx-2"
+                >
+                  <div class="">
+                    <img
+                      src="/img/termurah-3.webp"
+                      alt=""
+                      class="h-[120px] object-cover w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-between min-h-[180px] p-3">
+                    <div class="flex flex-col gap-y-1">
+                      <span>5 Diamonds</span>
+                      <span
+                        class="text-orange-500 text-xl font-bold"
+                        >Rp1.500</span
+                      >
+                      <img
+                        src="/img/10menit-p.svg"
+                        alt="10 menit"
+                        class="w-20 h-10"
+                      />
+                    </div>
+                    <span class="text-sm text-gray-400">26 terjual</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex flex-col rounded-lg overflow-hidden border mx-2"
+                >
+                  <div class="">
+                    <img
+                      src="/img/termurah-4.webp"
+                      alt=""
+                      class="h-[120px] object-cover w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col justify-between min-h-[180px] p-3">
+                    <div class="flex flex-col gap-y-1">
+                      <span>5 Diamonds</span>
+                      <span
+                        class="text-orange-500 text-xl font-bold"
+                        >Rp1.300</span
+                      >
+                      <img
+                        src="/img/10menit-p.svg"
+                        alt="10 menit"
+                        class="w-20 h-10"
+                      />
+                    </div>
+                    <span class="text-sm text-gray-400">17 terjual</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slider | Prodouk Promo -->
+    </div>
+    <footer>
+      <div class="footer-desktop-version">
+          <div class="footer-container">
+              <div class="footer-flex-container">
+                  <div class="row-flex-container">
+                      <div class="content-container">
+                          <h3>Bantuan</h3>
+                          <div class="inside-content-container">
+                              <a href="#">
+                                  <p>Pusat Bantuan</p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="content-container">
+                          <h3>itemku</h3>
+                          <div class="inside-content-container">
+                              <a href="#">
+                                  <p>Tentang itemku</p>
+                              </a>
+                              <a href="#">
+                                  <p>itemku Blog</p>
+                              </a>
+                              <a href="#">
+                                  <p>Identitas Brand</p>
+                              </a>
+                              <a href="#">
+                                  <p>Aturan Penggunaan</p>
+                              </a>
+                              <a href="#">
+                                  <p>Kebijakan Pengembalian Dana</p>
+                              </a>
+                              <a href="#">
+                                  <p>Kebijakan Privasi</p>
+                              </a>
+                              <a href="#">
+                                  <p>Karir</p>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row-flex-container">
+                      <div class="content-container">
+                          <h3>Pembeli</h3>
+                          <div  class="inside-content-container">
+                              <a href="#">
+                                  <p>Cara Belanja</p>
+                              </a>
+                              <a href="#">
+                                  <p>Cara Trading</p>
+                              </a>
+                              <a href="#">
+                                  <p>Cara Pembayaran</p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="content-container">
+                          <h3>Penjual</h3>
+                          <div class="inside-content-container">
+                              <a href="#">
+                                  <p>Cara Berjualan</p>
+                              </a>
+                              <a href="#">
+                                  <p>Cerita Penjual Sukses</p>
+                              </a>
+                              <a href="#">
+                                  <p>Pencairan Saldo</p>
+                              </a>
+                              <a href="#">
+                                  <p>Keuntungan Berjualan di itemku</p>
+                              </a>
+                              <a href="#">
+                                  <p>Tips Berjualan</p>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="payment-and-social-media-container">
+                      <div class="payment-section">
+                          <h3>Metode Pembayaran</h3>
+                          <div class="grid-container">
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Flinkaja-sm.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Findodana.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Falfamidi.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Falfamart.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Findomaret.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2F3-sm.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Findosat.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Fxl-sm.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Ftelkomsel.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Flainnya.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Fbri.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Fpermata.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Fmaybank.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Fbni.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Fmandiri.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Fbca.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Fqris.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Fshopeepay.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Fgopay.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Fdana.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Fovo.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="quarter-width">
+                                  <div class="icon-container">
+                                      <div class="icon-payment">
+                                          <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Flogo%2Fpayment%2Fdompetku-sm.png&w=48&q=75" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="social-media-content">
+                          <h3>Ikuti Itemku</h3>
+                          <div class="social-media-container">
+                              <div class="social-media-icon">
+                                  <a href="#">
+                                      <img src="https://files.itemku.com/logo/social-media/facebook-square.svg" alt="">
+                                  </a>
+                              </div>
+                              <div class="social-media-icon">
+                                  <a href="#">
+                                      <img src="https://files.itemku.com/logo/social-media/instagram-square.svg" alt="">
+                                  </a>
+                              </div>
+                              <div class="social-media-icon">
+                                  <a href="#">
+                                      <img src="https://files.itemku.com/logo/social-media/youtube-square.svg" alt="">
+                                  </a>
+                              </div>
+                              <div class="social-media-icon">
+                                  <a href="#">
+                                      <img src="https://files.itemku.com/logo/social-media/tiktok-square.svg" alt="">
+                                  </a>
+                              </div>
+                              <div class="social-media-icon">
+                                  <a href="#">
+                                      <img src="https://files.itemku.com/logo/social-media/twitter-square.svg" alt="">
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="banner-container">
+                              <div>
+                                  <img src="https://imgop.itemku.com/?url=https%3A%2F%2Ffiles.itemku.com%2Fillustration%2Fitemku%2Fhome%2Fdesktop-footer.png&w=414&q=75" alt="">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="copyright-container">
+              <div class="copyright-section">
+                  <p>itemku v
+                  2.81.2
+                  &copy; 2014 - 2023 PT. Five Jack All Rights Reserved.
+                  </p>
+              </div>
+              <div>
+                  <div class="trade-mark-section">
+                      <p>All other trademarks belong to their respective owners.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-mobile-version">
+
+      </div>
+  </footer>
+    <!-- Javacsript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slick-slider").slick({
+          dots: false,
+          arrows: false,
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          responsive: [
+            {
+              breakpoint: 500,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+              },
+            },
+          ],
+        });
+
+        $(".slick-slider-ulasan").slick({
+          dots: false,
+          arrows: false,
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+              },
+            },
+          ],
+        });
+
+        $(".slider-produk-lain").slick({
+          dots: false,
+          arrows: false,
+          infinite: false,
+          slidesToShow: 6,
+          slidesToScroll: 2,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                infinite: true,
+              },
+            },
+          ],
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var spanTrigger = document.getElementById("tampilkan-top-up");
+        var content = document.querySelector("#top-up");
+
+        var spanTriggerDeskripsi = document.getElementById(
+          "tampilkan-deskripsi"
+        );
+        var contentDeskripsi = document.querySelector("#deskripsi");
+
+        spanTrigger.addEventListener("click", function () {
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            spanTrigger.innerHTML = "Tampilkan lebih banyak";
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            spanTrigger.innerHTML = "Tampilkan lebih sedikit";
+          }
+          console.log("he");
+        });
+
+        spanTriggerDeskripsi.addEventListener("click", function () {
+          if (contentDeskripsi.style.maxHeight) {
+            contentDeskripsi.style.maxHeight = null;
+            spanTriggerDeskripsi.innerHTML = "Tampilkan lebih banyak";
+          } else {
+            contentDeskripsi.style.maxHeight =
+              contentDeskripsi.scrollHeight + "px";
+            spanTriggerDeskripsi.innerHTML = "Tampilkan lebih sedikit";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
