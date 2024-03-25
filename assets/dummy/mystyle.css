@@ -2,14 +2,14 @@
 
 
 
-* ,
+/* * ,
 ::after ,
 ::before    {
     font-family: 'poppins' , sans-serif;
     box-sizing: border-box;
-}
+} */
 
-body    {
+.body-goals    {
     margin: 0;
     padding: 0;
     font-family: 'poppins' sans-serif;
@@ -256,7 +256,7 @@ body    {
 
 /* item3  */
 
-main-container-item3     {
+.main-container-item3     {
     display: flex;
     justify-content: center;    
     align-items: center;

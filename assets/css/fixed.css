@@ -3,8 +3,8 @@
     /* background-color: aqua; */
     flex-wrap: wrap;
     height: auto;
-    border: 2px solid black;
-    margin: 15px 15%;
+    /* border: 1px solid rgb(197, 188, 188); */
+    margin: 15px 8%;
     box-sizing: border-box;
 }
 .container1{
@@ -17,7 +17,8 @@
     text-align: center;
     box-sizing: border-box;
     font-size: 30px;
-    /* border: 1px solid #d1cccc; */
+    border-radius: 15px;
+    border: 1px solid #d1cccc;
 }
 .header-content{
     display: flex;
@@ -81,11 +82,11 @@
     font-size: 21px;
 }
 .bungkus3{
-    /* background-color: yellow; */
+    background-color: rgb(70, 116, 202);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 .unt-gmbr{
     display: block;
@@ -101,12 +102,15 @@
     height: 64px;
 }
 .isi-top-up{
-    border: 1px solid white;
-    /* background-color: #007bff; */
+    /* border: 1px solid white; */
+    background-color: #007bff;
     margin: 5px;
     margin-top: 10px;
+    width: 126px;
+    height: 135px;
     /* background-color: transparent; */
     box-sizing: border-box;
+    clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
 }
 .box{
     margin-top: 15px;
@@ -120,7 +124,7 @@
 }
 .box img{
     top: -20px;
-    transform: translate(0%, -30%);
+    transform: translate(50%, -30%);
     border: #333 solid 1px;
 }
 /* .box {
@@ -158,7 +162,10 @@
     flex: 1 100%;
     width: fit-content;
     height: 400px;
-    /* border: 1px solid #d1cccc; */
+    margin: 8px;
+    box-sizing: border-box;
+    border: 1px solid #d1cccc;
+    border-radius: 15px;
     /* Other styles */
     /* transition: transform 0.3s ease;  */
 }
@@ -173,6 +180,7 @@
     box-sizing: border-box;
     margin: 3px;
     flex-direction: row;
+    margin-left: 5px;
     justify-content: flex-start; 
     align-items: center; 
 }
@@ -198,7 +206,7 @@
     border: 1px solid white;
     margin: 5px;
     flex: 1;
-    height: 148px;
+    height: 158px;
     box-sizing: border-box;
     background-color: #afbbca;
 
@@ -229,6 +237,7 @@
 }
 .rating img{
     flex: 1;
+    margin-left: 5px;
     width: 15px;
     height: 15px;
 }
@@ -237,7 +246,17 @@
 }
 .wdh{
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+
 }
+/* .wdh img{
+    flex: 1;
+    width: 15px;
+    height: 15px;
+    display: contents;
+} */
 .isi{
     /* background-color: black; */
     border: 2px solid white;
@@ -250,7 +269,8 @@
     flex: 1 100%;
     width: 500px;
     margin: 10px;
-    /* border: 1px solid #d1cccc; */
+    border-radius: 15px;
+    border: 1px solid #d1cccc;
     /* background-color: red; */
 }
 .bungkus-isi{
@@ -365,6 +385,14 @@
     }
     .flex-item {
         margin-right: 3px; 
+    }
+    .box img{
+        top: -20px;
+        transform: translate(50%, -30%);
+        border: #333 solid 1px;
+    }
+    .flex p{
+        font-size: 10px;
     }
     .card-content{
         display: flex;

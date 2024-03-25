@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'poppins' , sans-serif;
+    box-sizing: border-box;
 }
 
 section {
@@ -14,7 +16,8 @@ header {
 }
 
 .main-container {
-    height: 17rem;
+    /* height: 17rem; */
+    height: fit-content;
 }
 
 .inside-main-container {
